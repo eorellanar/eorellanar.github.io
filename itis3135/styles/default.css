@@ -1,0 +1,26 @@
+body {
+    background-color: #F9F9ED;
+    color: #535B8D;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+a {
+    color: #DA4167;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #83B616;
+    text-decoration: line;
+}
+
+main {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    text-align: center;
+}
