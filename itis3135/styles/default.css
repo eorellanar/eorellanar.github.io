@@ -25,3 +25,12 @@ p {
     margin-left: 3%;
     margin-right: 3%;
 }
+
+figure {
+    font-style: italic;
+    text-align: center;
+}
+
+li {
+    padding: 5px 0 5px 0;
+}
