@@ -39,3 +39,11 @@ figure {
 li {
     padding: 5px 0 5px 0;
 }
+
+img {
+    width: 51%;
+}
+
+figure {
+    text-align: center;
+}
