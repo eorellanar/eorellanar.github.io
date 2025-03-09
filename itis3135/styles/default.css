@@ -2,7 +2,7 @@ body {
     background-color: #F9F9ED;
     color: #535B8D;
     text-align: center;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code';
 }
 
 a {
@@ -21,9 +21,14 @@ main {
     margin-right: 5%;
 }
 
+h1 h2 {
+    font-family: Georgia;
+}
+
 p {
     margin-left: 3%;
     margin-right: 3%;
+    font-family: sans-serif;
 }
 
 figure {
