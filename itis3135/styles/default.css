@@ -40,10 +40,14 @@ li {
     padding: 5px 0 5px 0;
 }
 
-img {
+.introImage {
     width: 51%;
 }
 
 figure {
     text-align: center;
+}
+
+figcaption {
+    font-style: italic;
 }
