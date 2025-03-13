@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Hobby Home</title>
+    <script>
+        const link1 = document.getElementById("link1");
+        const link2 = document.getElementById("link2");
+        const link3 = document.getElementById("link3");
+        const page1 = document.getElementById("page1");
+        const page2 = document.getElementById("page2");
+        const page3 = document.getElementById("page3");
+        
+        link1.addEventListener("click", event => {
+            page2.style.display = "none";
+            page3.style.display = "none";
+        });
+
+        link2.addEventListener("click", event => {
+            page1.style.display = "none";
+            page3.style.display = "none";
+        });
+
+        link3.addEventListener("click", event => {
+            page1.style.display = "none";
+            page2.style.display = "none";
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="link1">Page1</button> || <button id="link2">Page2</button> || <button id="link3">Page3</button>
+        </nav>
+        <h1>Hobby Page</h1>
+    </header>
+    <main>
+        <section id="page1">
+            <p>Page1</p>
+        </section>
+        <section id="page2">
+            <p>Page2</p>
+        </section>
+        <section id="page3">
+            <p>Page3</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</body>
+</html>
