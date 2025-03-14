@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Page Hobby Home</title>
+    <title>Multi Page Hobby Site</title>
     <script>
         var p1 = document.getElementById("page1");
         var p2 = document.getElementById("page2");
@@ -33,6 +33,24 @@
         #page3 {
             display: "block";
         }
+
+        nav {
+            text-align: center;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        p {
+            margin: 0, auto, 0, auto;
+            width: 900px;
+            text-align: center;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -40,17 +58,41 @@
         <nav>
             <button onclick="show1()">Page1</button> || <button>Page2</button> || <button>Page3</button>
         </nav>
-        <h1>Hobby Page</h1>
+        <h1>DIY Mechanic and Miata</h1>
     </header>
     <main>
         <section id="page1">
-            <h2>Page1</h2>
+            <h2>The Miata and I</h2>
         </section>
         <section id="page2">
-            <h2>Page2</h2>
+            <h2>Home Page</h2>
+            <figure>
+                <img src="" alt="Photo of my miata">
+                <figcaption>My 1991 Mazda Miata</figcaption>
+            </figure>
+            <p>
+                Hi my name is Edgar and this website is dedicated to my precious hobby and car. I am a car fanatic and have the pleasure of 
+                owning the cute and popular Mazda Miata. With its convertible top and rear wheel drive setup, it's a car for hot girl summer
+                and burning rubber in an empty parking lot. 
+            </p>
+            <p>
+                Not only do I have a remarkable car, I have put blood, sweat and tears in the making it. Yes, I am able to do mechanic work, 
+                or dare I say that I am a mechanic. I've been working on cars since I was 17 and can confidently do just about anything on my
+                car, and a little less on other vehicles. 
+            </p>
+            <figure>
+                <img src="" alt="Me and a friend pulling a motor out">
+                <figcaption>My friend and I pulling the motor out of a 1999 Honda CR-V</figcaption>
+            </figure>
         </section>
         <section id="page3">
-            <h2>Page3</h2>
+            <h2>Eventful Times</h2>
+        </section>
+        <section id="page4">
+            <h2>Where The Fun Was Made</h2>
+        </section>
+        <section id="page5">
+            <h2>How My Hobby Came To Be, and Why</h2>
         </section>
     </main>
     <footer>
