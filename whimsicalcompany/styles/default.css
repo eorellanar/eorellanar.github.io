@@ -1,0 +1,39 @@
+body {
+    background-color: #D0DB97;
+    color: #181D27;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #181D27;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
