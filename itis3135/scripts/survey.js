@@ -8,10 +8,7 @@ function loadImage() {
     document.getElementById("loadImage").innerHTML = text;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("introForm");
-    form.addEventListener("submit", handleFormSubmit);
-});
+
 
 function handleFormSubmit(event) {
     event.preventDefault();
@@ -37,7 +34,7 @@ function handleFormSubmit(event) {
 
     const courseInputs = document.querySelectorAll(".course");
     let courses = [];
-    courseInputs.forEach(input => {
+    courseInputs.forEach((input) => {
         if (input.value.trim()) {
             courses.push(input.value.trim());
         }
@@ -61,7 +58,7 @@ function handleFormSubmit(event) {
             <p><strong>Academic Background:</strong> ${academicBackground}</p>
             <p><strong>Web Development Background:</strong> ${webBackground}</p>
             <p><strong>Computer Platform:</strong> ${platform}</p>
-            <p><strong>Courses Currently Taking:</strong> <ul>${courses.map(c => `<li>${c}</li>`).join("")}</ul></p>
+            <p><strong>Courses Currently Taking:</strong> <ul>${courses.map((c) => `<li>${c}</li>`).join("")}</ul></p>
             <p><strong>Funny Thing:</strong> ${funnyThing}</p>
             <p><strong>Anything Else:</strong> ${anythingElse}</p>
         `;
@@ -83,7 +80,7 @@ function resetForm() {
     document.getElementById("loadImage").innerHTML = "";
 
     const courseContainer = document.getElementById("coursesContainer");
-    courseContainer.querySelectorAll(".course-group").forEach(group => group.remove());
+    courseContainer.querySelectorAll(".course-group").forEach((group) => group.remove());
 }
 
 function courseContainerController() {
@@ -107,3 +104,8 @@ function courseContainerController() {
     courseGroup.appendChild(deleteBtn);
     container.appendChild(courseGroup);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("introForm");
+    form.addEventListener("submit", handleFormSubmit);
+});
