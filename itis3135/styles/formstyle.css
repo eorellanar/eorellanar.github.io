@@ -1,0 +1,95 @@
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.course-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.course-group input[type="text"] {
+    flex: 1;
+}
+
+.delete-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #e74c3c;
+}
+
+button[type="button"] {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="submit"], input[type="reset"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #e62222;
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+}
+
+#courseSection {
+    margin-bottom: 20px;
+}
+
+#courseSection label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#coursesContainer {
+    margin-bottom: 10px;
+}
+
+#courseSection button[type="button"] {
+    margin-bottom: 0;
+}
