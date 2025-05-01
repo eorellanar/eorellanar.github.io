@@ -5,6 +5,21 @@ body {
     font-family: 'Fira Code';
 }
 
+@media (max-width: 599px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #C4D6B0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        margin: 0 auto;
+        background-color: #FCDE9C;
+    }
+}
+
 a {
     color: #DA4167;
     text-decoration: none;
@@ -17,9 +32,12 @@ a:hover {
 
 
 main {
-    margin-left: 5%;
-    margin-right: 5%;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
+
+
 
 h1, h2 {
     font-family: Georgia;
