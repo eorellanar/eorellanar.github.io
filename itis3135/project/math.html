@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Informational</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Operators and Arithmetic in JavaScript</h2>
+        <p>Below we'll be talking about how to do math in JavaScript</p>
+        
+        <h2>Arithmetic Operators</h2>
+        <p>
+          JavaScript supports basic math operators for performing calculations:
+        </p>
+        <pre>
+    let a = 10;
+    let b = 3;
+    
+    console.log(a + b); // Addition → 13
+    console.log(a - b); // Subtraction → 7
+    console.log(a * b); // Multiplication → 30
+    console.log(a / b); // Division → 3.333...
+    console.log(a % b); // Modulus (remainder) → 1
+        </pre>
+    
+        <h2>Assignment Operators</h2>
+        <p>
+          These are used to assign values to variables, often with arithmetic:
+        </p>
+        <pre>
+    let x = 5;
+    x += 2; // x = x + 2 → 7
+    x -= 1; // x = x - 1 → 6
+    x *= 3; // x = x * 3 → 18
+    x /= 2; // x = x / 2 → 9
+    x %= 4; // x = x % 4 → 1
+        </pre>
+    
+        <h2>Comparison Operators</h2>
+        <p>
+          Used to compare values and return a Boolean (true or false):
+        </p>
+        <pre>
+    console.log(5 == '5');   // true (loose equality)
+    console.log(5 === '5');  // false (strict equality)
+    console.log(10 != 5);    // true
+    console.log(10 !== '10'); // true
+    console.log(7 > 3);      // true
+    console.log(2 <= 1);     // false
+        </pre>
+    
+        <h2>Logical Operators</h2>
+        <p>
+          Combine or invert Boolean values:
+        </p>
+        <pre>
+    let isAdult = true;
+    let hasID = false;
+    
+    console.log(isAdult && hasID); // false (AND)
+    console.log(isAdult || hasID); // true (OR)
+    console.log(!isAdult);         // false (NOT)
+        </pre>
+    
+        <h2>Increment and Decrement</h2>
+        <p>
+          Handy for quickly increasing or decreasing numbers by 1:
+        </p>
+        <pre>
+    let count = 0;
+    count++; // count = 1
+    count--; // count = 0
+        </pre>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

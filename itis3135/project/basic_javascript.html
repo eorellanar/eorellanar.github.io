@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Informational</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>The Basics</h2>
+            <h3>Variables</h3>
+            <p>
+              Variables are used to store data in JavaScript. You can declare them using <code>let</code>, <code>const</code>, or <code>var</code>.
+              It's recommended to use <code>let</code> and <code>const</code> in modern JavaScript.
+            </p>
+            <pre>
+        let name = "Alice";
+        const age = 30;
+        var isStudent = true;
+            </pre>
+        
+            <h3>Data Types</h3>
+            <p>
+              JavaScript has several basic data types: <strong>string</strong>, <strong>number</strong>, <strong>boolean</strong>,
+              <strong>null</strong>, <strong>undefined</strong>, <strong>object</strong>, and <strong>symbol</strong>.
+            </p>
+            <pre>
+        let text = "Hello";      // string
+        let number = 42;         // number
+        let isTrue = false;      // boolean
+        let empty = null;        // null
+        let notDefined;          // undefined
+        let person = { name: "Bob", age: 25 }; // object
+            </pre>
+        
+            <h3>Functions</h3>
+            <p>
+              Functions allow you to define reusable blocks of code. They can take arguments and return values.
+            </p>
+            <pre>
+        function greet(name) {
+          return "Hello, " + name + "!";
+        }
+        
+        console.log(greet("Alice")); // Output: Hello, Alice!
+            </pre>
+        
+            <h3>If/Else Statements</h3>
+            <p>
+              Conditional statements let you run different code based on conditions. Use <code>if</code>, <code>else if</code>, and <code>else</code>.
+            </p>
+            <pre>
+        let score = 85;
+        
+        if (score >= 90) {
+          console.log("Grade: A");
+        } else if (score >= 80) {
+          console.log("Grade: B");
+        } else {
+          console.log("Keep trying!");
+        }
+            </pre>        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
