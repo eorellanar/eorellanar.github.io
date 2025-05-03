@@ -50,7 +50,8 @@ footer p {
 }
 
 footer a {
-    color: #ec4949
+    color: #ec4949;
+    text-decoration: none;
 }
 
 pre {
@@ -91,7 +92,6 @@ pre {
     width: 300px;
     height: 550px;
     margin: 50px auto;
-    border: 2px solid #333;
     border-radius: 40px;
     background-color: #222;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -130,10 +130,8 @@ pre {
   
 .phone-screen input {
     width: 100%;
-    padding: 10px;
     margin-bottom: 15px;
     border-radius: 8px;
-    border: 1px solid #ccc;
     font-size: 1em;
 }
   

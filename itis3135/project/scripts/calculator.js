@@ -2,8 +2,8 @@ function calculate() {
     const input = document.getElementById("numbers").value;
     const numbers = input
       .split(",")
-      .map(n => parseFloat(n.trim()))
-      .filter(n => !isNaN(n));
+      .map((n) => parseFloat(n.trim()))
+      .filter((n) => !isNaN(n));
   
     if (numbers.length === 0) {
       alert("Please enter a valid list of numbers.");
