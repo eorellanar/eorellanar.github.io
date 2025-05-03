@@ -12,18 +12,81 @@
     </header>
     <main>
         <h2>Real Life Examples</h2>
-        <p>Below you will find examples of mini-javascript projects that showcase its use.</p>
+        <p>Below you will find examples of mini-javascript projects that showcase its use. If you want to see
+            the code behind them, you can right click on the page and click on "view page source."
+        </p>
 
         <div id="project-1">
-            <p>Number Validator</p>
+            <h2>Number Validator</h2>
+            <div class="number-valider">
+                <div class="phone-header"></div>
+                <div class="phone-screen">
+                    <p>Enter U.S. Number:</p>
+                    <input type="text" id="user-input" placeholder="123-456-7890" />
+                    <div id="buttons">
+                        <button id="check-btn">Validate</button>
+                        <button id="clear-btn">Clear</button>
+                    </div>
+                    <div id="results-div"></div>
+                </div>
+            </div>
         </div>
 
         <div id="project-2">
-            <p>Cash Register</p>
+            <h2>Spam Checker</h2>
+            <div class="spam-filter">
+                <textarea id="spam-input" placeholder="Enter text to check..." rows="6"></textarea>
+                <div class="button-group">
+                    <button id="check-spam">Check</button>
+                    <button id="clear-spam">Clear</button>
+                </div>
+                <p id="spam-result"></p>
+            </div>
         </div>
         
         <div id="project3">
-            <p>Statistics Calculator</p>
+            <h2>Statistics Calculator</h2>
+            <div class="calculator">
+                <p>Enter a list of comma-separated numbers.</p>
+                <form onsubmit="calculate(); return false;">
+                    <label for="numbers">Numbers:</label>
+                    <input type="text" name="numbers" id="numbers" />
+                    <button type="submit">Calculate</button>
+                </form>
+                <div class="results">
+                    <p>
+                        The <dfn>mean</dfn> of a list of numbers is the average, calculated by
+                        taking the sum of all numbers and dividing that by the count of numbers.
+                    </p>
+                    <p class="bold">Mean: <span id="mean"></span></p>
+                    <p>
+                        The <dfn>median</dfn> of a list of numbers is the number that appears in
+                        the middle of the list, when sorted from least to greatest.
+                    </p>
+                    <p class="bold">Median: <span id="median"></span></p>
+                    <p>
+                        The <dfn>mode</dfn> of a list of numbers is the number that appears most
+                        often in the list.
+                    </p>
+                    <p class="bold">Mode: <span id="mode"></span></p>
+                    <p>
+                        The <dfn>range</dfn> of a list of numbers is the difference between the
+                        largest and smallest numbers in the list.
+                    </p>
+                    <p class="bold">Range: <span id="range"></span></p>
+                    <p>
+                        The <dfn>variance</dfn> of a list of numbers measures how far the values
+                        are from the mean, on average.
+                    </p>
+                    <p class="bold">Variance: <span id="variance"></span></p>
+                    <p>
+                        The <dfn>standard deviation</dfn> of a list of numbers is the square
+                        root of the variance.
+                    </p>
+                    <p class="bold">
+                        Standard Deviation: <span id="standardDeviation"></span>
+                    </p>
+            </div>
         </div>
         <p>All projects were sourced from <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/">freecodecamp.org.</a>
             We highly recommend visiting their website for hands on practice in JavaScript
@@ -34,5 +97,8 @@
     </footer>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/phone.js"></script>
+    <script src="scripts/spam.js"></script>
+    <script src="scripts/calculator.js"></script>
 </body>
 </html>
