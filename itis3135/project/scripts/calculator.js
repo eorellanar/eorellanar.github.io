@@ -25,7 +25,7 @@ function calculate() {
     let maxFreq = 0;
     let mode = [];
   
-    numbers.forEach(n => {
+    numbers.forEach((n) => {
       freq[n] = (freq[n] || 0) + 1;
       if (freq[n] > maxFreq) maxFreq = freq[n];
     });
