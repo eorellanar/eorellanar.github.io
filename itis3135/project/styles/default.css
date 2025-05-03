@@ -150,3 +150,7 @@ pre {
 .phone-screen button:hover {
     background-color: #1f1f1f;
 }
+
+.bold {
+    font-weight: bold;
+}
